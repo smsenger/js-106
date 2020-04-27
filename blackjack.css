@@ -1,0 +1,19 @@
+body {
+    background-image: url("spaceBackground.jpg");
+    color: white;
+}
+
+#table {
+    margin-top: 23%;
+    background-color: black;
+    opacity: .8;
+    border: 2px solid white;
+    width: "70%";
+    height: "70%";
+}
+
+img {
+    width: 10%;
+    height: 20%;
+    opacity: 1;
+}
