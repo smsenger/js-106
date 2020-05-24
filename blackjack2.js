@@ -41,7 +41,8 @@ function cardDeck() {
 }
 
 
-dButton = document.getElementById("deal-button").onclick = deal(); //FUNCTION GETS CALLED W/O CLICK
+// $("#deal-button").onclick = function() {
+//     deal();};
 
 function deal() {
     //when deal button pressed(above)
@@ -49,13 +50,13 @@ function deal() {
     // console.log(deck)
     for(i = 0; i < 2; i++) {
         let card = deck.pop();
-        // console.log(card)
+        console.log(card)
         player.hand.push(card);
         getCardUI(card)
     }
     for(x = 0; x < 2; x++) {
         let card = deck.pop();
-        // console.log(card)
+        console.log(card)
         dealer.hand.push(card);
         getCardUI(card)
     }
@@ -183,7 +184,7 @@ function getCardUI(card) {     //ONLY BROKEN IMAGE LINK. this should match up ca
     
     else if (card.suits == 'diamond') {
         if(card.values == 'A') {
-            image.src = "images/2_of_diamond.png";
+            image.src == "images/2_of_diamond.png";
         }
         else if(card.values == 'K') {
             image.src = "images/king_of_diamond.png";
@@ -266,7 +267,7 @@ function getCardUI(card) {     //ONLY BROKEN IMAGE LINK. this should match up ca
         }
     }
     image.className = 'card';
-    image.innerHTML = image;
+    $('.card').html("image.src");
     return image;
 };
 
